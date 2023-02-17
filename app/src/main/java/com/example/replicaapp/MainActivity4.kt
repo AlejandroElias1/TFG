@@ -13,6 +13,11 @@ class MainActivity4 : AppCompatActivity() {
         setContentView(binding.root)
         val correoInt = intent.getStringExtra("correo")
         binding.correoInt.text = correoInt
+
+        binding.flecha.setOnClickListener {
+            val intent = android.content.Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
     }
 
 
