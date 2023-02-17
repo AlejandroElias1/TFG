@@ -16,5 +16,12 @@ class MainActivity3 : AppCompatActivity() {
             val intent = android.content.Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        binding.contiuar.setOnClickListener {
+            val intent = android.content.Intent(this, MainActivity4::class.java)
+            intent.putExtra("correo", binding.correoText.text.toString())
+            startActivity(intent)
+        }
+
+        }
     }
-}

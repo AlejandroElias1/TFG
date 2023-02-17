@@ -16,5 +16,13 @@ class MainActivity2 : AppCompatActivity() {
             val intent = android.content.Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        binding.suscribir.setOnClickListener {
+            val intent = android.content.Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        binding.button3.setOnClickListener {
+            val intent = android.content.Intent(this, MainActivity5::class.java)
+            startActivity(intent)
+        }
     }
 }

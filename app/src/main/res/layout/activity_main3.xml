@@ -72,8 +72,9 @@
         android:layout_width="353dp"
         android:layout_height="72dp"
         android:gravity="top"
+        android:textSize="13dp"
         android:text="¡Sí! Me gustaria recivir por correo electronico ofertas especiales y novedades de Disney+ y otros productos y servicios de la familia de empresas de Walt Disney."
-        android:textColor="#B5FFFFFF"
+        android:textColor="#7EFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
@@ -98,24 +99,32 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="350dp"
-        android:layout_height="52dp"
-        app:hintTextColor="#838181"
+        android:layout_width="351dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:hint="Correo electrónico"
+        android:textColorHint="#9D9EA3"
+        app:boxStrokeColor="#9D9EA3"
+        app:endIconTint="#FFFFFF"
+        app:errorEnabled="true"
+        app:hintTextColor="#9D9EA3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.02">
+        app:layout_constraintVertical_bias="0.02"
+        app:startIconTint="#FFFFFF">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correoText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bordes"
-            android:hint="Correo electrónico"
-            android:shadowColor="#FFFFFF"
-            android:textColor="@color/white"
-            android:textColorLink="@color/white" />
+            android:background="#31343E"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
@@ -131,8 +140,8 @@
         app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="351dp"
-        android:layout_height="259dp"
+        android:layout_width="359dp"
+        android:layout_height="171dp"
         android:background="@drawable/bordes"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
@@ -145,6 +154,32 @@
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:layout_constraintVertical_bias="0.05">
 
+        <Button
+            android:id="@+id/contiuar"
+            android:layout_width="318dp"
+            android:layout_height="44dp"
+            android:backgroundTint="#016CF9"
+            android:text="Continuar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="319dp"
+            android:layout_height="105dp"
+            android:text="Disney usará tus datos para personalizar y mejorar tu experiencia Disney+ y para enviarte informacion sobre Disney+. Puedes cambiar tus preferencias de comunicación en cualquier momento. Podremos usar tus datos como se describe en nuestra Politica de privacidad, incluyendo compartidos conla Familia de Empresas de Walt Disney. Al hacer click en 'Continuar', reconoces que has leido y aceptado nuestra Politica de Privaciadad, Politica de coockies y la informacion sobre Privacidad en R.U y en la U.E."
+            android:textColor="#7EFFFFFF"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.Guideline
@@ -152,6 +187,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="396dp" />
+        app:layout_constraintGuide_begin="386dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
