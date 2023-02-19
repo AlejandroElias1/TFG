@@ -24,5 +24,7 @@ class MainActivity2 : AppCompatActivity() {
             val intent = android.content.Intent(this, MainActivity5::class.java)
             startActivity(intent)
         }
+
+
     }
 }
