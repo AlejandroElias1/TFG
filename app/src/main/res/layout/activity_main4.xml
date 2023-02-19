@@ -8,7 +8,7 @@
     tools:context=".MainActivity4">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/signUpButton"
         android:layout_width="348dp"
         android:layout_height="46dp"
         android:backgroundTint="#016CF9"
@@ -130,6 +130,7 @@
         app:startIconTint="#FFFFFF">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#31343E"
