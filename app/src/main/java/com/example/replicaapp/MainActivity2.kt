@@ -22,6 +22,7 @@ class MainActivity2 : AppCompatActivity() {
         }
         binding.button3.setOnClickListener {
             val intent = android.content.Intent(this, MainActivity5::class.java)
+            intent.putExtra("correo", binding.email.text.toString())
             startActivity(intent)
         }
 
