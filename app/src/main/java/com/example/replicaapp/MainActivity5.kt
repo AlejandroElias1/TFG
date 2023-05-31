@@ -4,41 +4,61 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.replicaapp.databinding.ActivityMain5Binding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity5 : AppCompatActivity() {
-    lateinit var binding: ActivityMain5Binding
+    private lateinit var binding: ActivityMain5Binding
+    private lateinit var firestore: FirebaseFirestore
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main5)
         binding = ActivityMain5Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val correo = intent.getStringExtra("correo")
-
-
+        firestore = FirebaseFirestore.getInstance()
 
         binding.flecha.setOnClickListener {
             val intent = android.content.Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
+
         setup(correo!!)
-
-
     }
-    private fun setup(correo:String){
+
+    private fun setup(correo: String) {
         binding.button4.setOnClickListener {
-            if(binding.pass1.text!!.isNotEmpty()){
+            if (binding.pass1.text!!.isNotEmpty()) {
                 FirebaseAuth.getInstance()
                     .signInWithEmailAndPassword(correo, binding.pass1.text.toString())
-                    .addOnCompleteListener {
-                        if(it.isSuccessful){
-                            val intent = android.content.Intent(this, MainActivity6::class.java)
-                            startActivity(intent)
-                        }else{
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            verificarPerfil(correo)
+                        } else {
                             showAlert()
                         }
                     }
             }
+        }
+    }
+
+    private fun verificarPerfil(correo: String) {
+        val perfilRef = firestore.collection("perfilesUsuarios")
+            .whereEqualTo("correo", correo)
+
+        perfilRef.get().addOnSuccessListener { querySnapshot ->
+            if (!querySnapshot.isEmpty) {
+                val intent = android.content.Intent(this, MainActivity7::class.java)
+                startActivity(intent)
+                finish() // Finaliza el MainActivity5 para que el usuario no pueda volver atrás
+            } else {
+                val intent = android.content.Intent(this, MainActivity6::class.java)
+                startActivity(intent)
+                finish() // Finaliza el MainActivity5 para que el usuario no pueda volver atrás
+            }
+        }.addOnFailureListener { exception ->
+            // Manejo de errores
+            showAlert()
         }
     }
 
@@ -51,3 +71,4 @@ class MainActivity5 : AppCompatActivity() {
         dialog.show()
     }
 }
+

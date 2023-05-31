@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F454F"
+    tools:context=".MainActivity9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageTendiditis"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tendinopatia_sindrome_de_quervain_300x300" />
+
+            <TextView
+                android:id="@+id/textTituloTendiditis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Tendinitis"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDescripcionTendiditis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Consiste en la inflamación de un tendón, y suele originarse por la repetición de un determinado movimiento en el tiempo. Las tendinitis pueden conducir a diferentes lesiones deportivas, como la epicondilitis lateral (también conocida como codo de tenista), la epicondilitis medial (codo de golfista) o la tendinitis rotuliana (rodilla de saltador)."
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/imageDistension"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rotura_muscular" />
+
+            <TextView
+                android:id="@+id/textTituloDistension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distensiones musculares"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textDescripcionDistension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=" Consisten en la rotura de fibras musculares debido a un estiramiento repentino del músculo. Un ejemplo de distensión muscular habitual asociada al ejercicio es la de los músculos isquiotibiales, que se localizan en la parte posterior de los muslos."
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/imageEsguince"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ds00343_ds01014_im03048_mcdc7_anklesprainthu_jpg_jpg" />
+
+            <TextView
+                android:id="@+id/textTituloEsguince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esguinces"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textDescripcionEsguince"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Son torceduras bruscas de una articulación, que pueden incluir la rotura de ligamentos o fibras musculares próximas. Los esguinces más frecuentes cuando se practica deporte son los que afectan a muñecas, tobillos y rodillas."
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/imageHueso"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fisura__sea_y_fractura_de_hueso" />
+
+            <TextView
+                android:id="@+id/textTituloHueso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fracturas o roturas de hueso"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textDescripcionHueso"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Las más habituales al practicar deporte afectan a piernas, brazos, tobillos, muñecas y dedos de las manos o de los pies."
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

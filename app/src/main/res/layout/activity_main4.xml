@@ -4,108 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1B1D29"
+    android:background="#3F454F"
     tools:context=".MainActivity4">
 
-    <Button
-        android:id="@+id/signUpButton"
-        android:layout_width="348dp"
-        android:layout_height="46dp"
-        android:backgroundTint="#016CF9"
-        android:text="Continuar"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="101dp"
+        android:layout_height="87dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correoInt"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155"
+        app:srcCompat="@drawable/_76c50f0136642cf845b9a8fb96af476" />
+
+    <TextView
+        android:id="@+id/correoInt"
+        android:layout_width="328dp"
+        android:layout_height="25dp"
+        android:text="correoInt"
+        android:textColor="#C8FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.067" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="352dp"
         android:layout_height="22dp"
         android:text="Usarás este correo electrónico para inicar sesión:"
-        android:textColor="#7EFFFFFF"
+        android:textColor="@color/white"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintHorizontal_bias="0.593"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.051" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="281dp"
-        android:layout_height="45dp"
-        android:text="Utiliza un mínimo de  6 caracteres (distingue mayúsculas de minúsculas) e incluye 2 de estos tipos: letras, números y carecteres espiciales."
-        android:textColor="#7EFFFFFF"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.022" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/avenirregular"
-        android:text="PASO  2  DE  4"
-        android:textColor="#888686"
-        android:textSize="9dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="351dp"
-        android:layout_height="54dp"
-        android:fontFamily="@font/avenirregular"
-        android:text="Utilizarás esta direccion de correo y contraseña para acceder a tu cuenta de Disney+ y ver tus series y peliculas favoritas."
-        android:textAlignment="viewStart"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.02" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/avenir2"
-        android:text="Crea tu contraseña"
-        android:textColor="#FFFFFF"
-        android:textSize="19dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.014" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/avenirregular"
-        android:text="SUSCRIBIRSE"
-        android:textColor="#888686"
-        android:textSize="9dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flecha"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -119,14 +57,14 @@
         app:endIconTint="#FFFFFF"
         app:errorEnabled="true"
         app:hintTextColor="#9D9EA3"
-        app:passwordToggleEnabled = "true"
-        app:passwordToggleTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.112"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white"
         app:startIconTint="#FFFFFF">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -139,29 +77,72 @@
             android:textColorHint="#FFFFFF" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="348dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#F56c19"
+        android:text="Continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoInt"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="281dp"
+        android:layout_height="45dp"
+        android:text="Utiliza un mínimo de  6 caracteres (distingue mayúsculas de minúsculas) e incluye 2 de estos tipos: letras, números y carecteres espiciales."
+        android:textColor="#7EFFFFFF"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir2"
+        android:text="Crea tu contraseña"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirregular"
+        android:text="REGISTRO"
+        android:textColor="@color/white"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flecha"
+        app:layout_constraintVertical_bias="0.036" />
+
     <ImageView
         android:id="@+id/flecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031"
+        app:layout_constraintVertical_bias="0.09"
         app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
-
-    <TextView
-        android:id="@+id/correoInt"
-        android:layout_width="328dp"
-        android:layout_height="25dp"
-        android:text="correoInt"
-        android:textColor="#C8FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.02" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

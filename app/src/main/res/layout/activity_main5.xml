@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1B1D29"
+    android:background="#3F454F"
     tools:context=".MainActivity5">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="352dp"
         android:layout_height="22dp"
         android:text="He olvidado mi contraseña"
-        android:textColor="#9C016CF8"
+        android:textColor="#F56c19"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,16 +36,15 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="106dp"
-        android:layout_height="84dp"
+        android:id="@+id/imageView6"
+        android:layout_width="101dp"
+        android:layout_height="87dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintTop_toBottomOf="@+id/flecha"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@drawable/_76c50f0136642cf845b9a8fb96af476" />
 
     <TextView
         android:id="@+id/textView5"
@@ -57,10 +56,10 @@
         android:textSize="19dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.029" />
 
     <ImageView
         android:id="@+id/flecha"
@@ -68,10 +67,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038"
+        app:layout_constraintVertical_bias="0.09"
         app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -111,7 +110,7 @@
         android:id="@+id/button4"
         android:layout_width="348dp"
         android:layout_height="46dp"
-        android:backgroundTint="#016CF9"
+        android:backgroundTint="#F56c19"
         android:text="Iniciar sesión"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

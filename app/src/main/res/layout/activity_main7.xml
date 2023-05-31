@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F454F"
+    tools:context=".MainActivity7"
+    android:name="android.permission.CAMERA" >
+
+
+
+    <ImageView
+        android:id="@+id/imageViewChat"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/comment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.22"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewInfo"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCall"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileName"
+        app:layout_constraintVertical_bias="0.449"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewCam"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewChat"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileName"
+        app:layout_constraintVertical_bias="0.22"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewCall"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/phone_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewChat"
+        app:layout_constraintVertical_bias="0.179"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        app:srcCompat="@drawable/_76c50f0136642cf845b9a8fb96af476" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textViewProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="211dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCall"
+        app:layout_constraintVertical_bias="0.491"
+        app:srcCompat="@drawable/microsoftteams_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
