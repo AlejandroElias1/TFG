@@ -7,9 +7,44 @@
     android:background="#3F454F"
     tools:context=".MainActivity9">
 
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="101dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/_76c50f0136642cf845b9a8fb96af476"
+        tools:ignore="UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/textViewTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informacion de lesiones"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,9 +73,9 @@
                 android:id="@+id/textDescripcionTendiditis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:padding="8dp"
                 android:text="Consiste en la inflamación de un tendón, y suele originarse por la repetición de un determinado movimiento en el tiempo. Las tendinitis pueden conducir a diferentes lesiones deportivas, como la epicondilitis lateral (también conocida como codo de tenista), la epicondilitis medial (codo de golfista) o la tendinitis rotuliana (rodilla de saltador)."
-                android:padding="8dp" />
+                android:textColor="@color/white" />
 
             <ImageView
                 android:id="@+id/imageDistension"
@@ -53,19 +88,19 @@
                 android:id="@+id/textTituloDistension"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:text="Distensiones musculares"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:padding="8dp" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textDescripcionDistension"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:padding="8dp"
                 android:text=" Consisten en la rotura de fibras musculares debido a un estiramiento repentino del músculo. Un ejemplo de distensión muscular habitual asociada al ejercicio es la de los músculos isquiotibiales, que se localizan en la parte posterior de los muslos."
-                android:padding="8dp" />
+                android:textColor="@color/white" />
 
             <ImageView
                 android:id="@+id/imageEsguince"
@@ -78,19 +113,19 @@
                 android:id="@+id/textTituloEsguince"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:text="Esguinces"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:padding="8dp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textDescripcionEsguince"
                 android:layout_width="match_parent"
-                android:textColor="@color/white"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:text="Son torceduras bruscas de una articulación, que pueden incluir la rotura de ligamentos o fibras musculares próximas. Los esguinces más frecuentes cuando se practica deporte son los que afectan a muñecas, tobillos y rodillas."
-                android:padding="8dp" />
+                android:textColor="@color/white" />
 
             <ImageView
                 android:id="@+id/imageHueso"
@@ -103,19 +138,19 @@
                 android:id="@+id/textTituloHueso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:text="Fracturas o roturas de hueso"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:padding="8dp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textDescripcionHueso"
                 android:layout_width="match_parent"
-                android:textColor="@color/white"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:text="Las más habituales al practicar deporte afectan a piernas, brazos, tobillos, muñecas y dedos de las manos o de los pies."
-                android:padding="8dp" />
+                android:textColor="@color/white" />
         </LinearLayout>
 
     </ScrollView>

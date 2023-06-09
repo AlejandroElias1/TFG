@@ -33,6 +33,8 @@ class MainActivity6 : AppCompatActivity() {
         // Configurar el clic del botón para guardar el perfil del usuario
         buttonCreateProfile.setOnClickListener {
             guardarPerfilUsuario()
+            val intent = android.content.Intent(this, MainActivity7::class.java)
+            startActivity(intent)
         }
     }
 

@@ -5,6 +5,9 @@
     import android.view.ViewGroup
     import android.widget.TextView
     import androidx.recyclerview.widget.RecyclerView
+    import java.text.SimpleDateFormat
+    import java.util.Date
+    import java.util.Locale
 
 
     class MessageAdapter(private val messages: MutableList<Message>, private val nombreUsuario: String) :
@@ -14,14 +17,6 @@
             val senderTextView: TextView = itemView.findViewById(R.id.senderTextView)
             val messageTextView: TextView = itemView.findViewById(R.id.messageTextView)
             val timestampTextView: TextView = itemView.findViewById(R.id.timestampTextView)
-            // Obtén el nombre de usuario del usuario actualmente autenticado desde tu base de datos o cualquier otra fuente de datos
-            val nombreUsuario = "Nombre de Usuario" // Reemplaza con el nombre de usuario real
-
-            // Obtener el usuario actual desde algún lugar (por ejemplo, una variable en tu actividad o fragmento)
-            val currentUser = "nombreUsuario"
-
-            // Crear una instancia del adaptador de mensajes y pasar el usuario actual como argumento
-            val messageAdapter = MessageAdapter(messages, currentUser)
 
 
         }
@@ -34,14 +29,12 @@
 
         override fun onBindViewHolder(holder: MessageViewHolder, position: Int) {
             val message = messages[position]
-            // Obtener el usuario actual desde algún lugar (por ejemplo, una variable en tu actividad o fragmento)
-            val currentUser = "nombreUsuario"
-            // Crear una instancia del adaptador de mensajes y pasar el usuario actual como argumento
-            val messageAdapter = MessageAdapter(messages, currentUser)
-            holder.senderTextView.text = if (message.sender == currentUser) nombreUsuario else "Usuario"
+            holder.senderTextView.text = message.userProfileName ?: "Usuario" // Mostrar el nombre de perfil del mensaje
             holder.messageTextView.text = message.message
-            holder.timestampTextView.text = message.timestamp.toString()
+            holder.timestampTextView.text = message.timestamp?.let { convertTimestampToDate(it) }
         }
+
+
 
         override fun getItemCount(): Int {
             return messages.size
@@ -68,4 +61,14 @@
             }
             return -1
         }
+
+        private fun convertTimestampToDate(timestamp: Long?): String {
+            val sdf = SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault())
+            timestamp?.let {
+                val date = Date(it)
+                return sdf.format(date)
+            }
+            return ""
+        }
+
     }
